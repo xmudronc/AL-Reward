@@ -314,7 +314,7 @@ codeunit 50106 RewardsUpgradeCode
         // If the code needs to be upgraded, the BRONZE reward level will be changed into the
         // ALUMINUM reward level.
         if Module.DataVersion.Major = 1 then begin
-            Reward.Get('BRONZE'); 
+            Reward.Get('BRONZE');
             Reward.Rename('ALUMINUM');
             Reward.Description := 'Aluminum Level';
             Reward.Modify();
